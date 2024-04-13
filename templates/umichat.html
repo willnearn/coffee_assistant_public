@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umi the Coffee Pro</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('serve_static', path='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">🐱Umi the Coffee Pro</div>
+        <div id="chat-body"></div>
+        <div id="chat-footer">
+            <textarea id="chat-input" placeholder="Type a message..."></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+        <div class="footer-content">
+            <img src="{{ url_for('static', filename='images/willnearn.jpeg') }}" alt="Will Nearn" class="footer-img">
+            <div>
+                <p>Hi! I'm Will Nearn, a workstayer that built Umi</p>
+                <p>Like what you see? <a href="https://www.buymeacoffee.com/willnearn">buy me a coffee☕</a> 😋</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
