@@ -1,5 +1,5 @@
 # coffee_assistant_backend
-This repository is the intellectual property of Will Nearn. It cannot be used without the express written consent of the owner
+This repository is a copy of the code behind the [coffee chat website](https://www.umitalks-coffee.com/), but I don't want to have the API keys available to the public. Enjoy! 
 
 
 # Notes
